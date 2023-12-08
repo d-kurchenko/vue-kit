@@ -1,0 +1,16 @@
+module.exports = {
+  root: true,
+  extends: [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  ignorePatterns:["dist", ".eslintrc.cjs", "rollup.config.js"],
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    project: ["./tsconfig.json"],
+    tsconfigRootDir: __dirname,
+  },
+  rules: {
+    "import/prefer-default-export": "off"
+  }
+}

@@ -1,1 +1,3 @@
-export { default as Dummy, type DummyProps } from "./Dummy"
+import { inject } from 'vue';
+
+export const injeect = () => inject('s');
