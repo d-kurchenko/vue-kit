@@ -19,10 +19,12 @@
     "url": "https://github.com/d-kurchenko/vue-kit"
   },
   "scripts": {
-    "start": "rollup --config --watch",
+    "dev": "rollup --config --watch",
     "build": "rollup --config",
     "prebuild": "rm -rf dist",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
@@ -33,15 +35,24 @@
     "@rollup/plugin-typescript": "^11.1.5",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
+    "@vueuse/core": "^10.7.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "husky": "latest",
     "prettier": "latest",
     "rollup": "latest",
     "tslib": "^2.6.2",
     "typescript": "latest",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-router": "^4.2.5"
   },
   "peerDependencies": {
-    "vue": ">=3.0.0"
+    "@vueuse/core": ">=10",
+    "vue": ">=3.0.0",
+    "vue-router": ">=4"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "reflect-metadata": "^0.1.14"
   }
 }

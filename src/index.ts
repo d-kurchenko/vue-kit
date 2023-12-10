@@ -1,3 +1,6 @@
-import { inject } from 'vue';
+import 'reflect-metadata';
 
-export const injeect = () => inject('s');
+export * from './types';
+export * from './wrappers';
+export * from './tools';
+export * from './uses';
