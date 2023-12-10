@@ -4,7 +4,7 @@ module.exports = {
     "airbnb-base",
     "airbnb-typescript/base"
   ],
-  ignorePatterns:["dist", ".eslintrc.cjs", "rollup.config.js", "playground"],
+  ignorePatterns:["dist", ".eslintrc.cjs", "rollup.config.js"],
   parserOptions: {
     parser: '@typescript-eslint/parser',
     project: ["./tsconfig.json"],
